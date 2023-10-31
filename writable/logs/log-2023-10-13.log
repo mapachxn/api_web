@@ -1,0 +1,92 @@
+ERROR - 2023-10-13 19:38:02 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\app_web\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\app_web\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'estudiantec', 3306, '', 0)
+#1 C:\xampp\htdocs\app_web\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\app_web\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\app_web\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\app_web\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\app_web\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\app_web\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\app_web\app\Controllers\Materia.php(41): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\app_web\system\CodeIgniter.php(919): App\Controllers\Materia->insert()
+#9 C:\xampp\htdocs\app_web\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+#10 C:\xampp\htdocs\app_web\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\app_web\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\app_web\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\app_web\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\app_web\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\app_web\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\app_web\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#3 C:\xampp\htdocs\app_web\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\app_web\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\app_web\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\xampp\htdocs\app_web\app\Controllers\Materia.php(41): CodeIgniter\Model->insert(Array)
+#7 C:\xampp\htdocs\app_web\system\CodeIgniter.php(919): App\Controllers\Materia->insert()
+#8 C:\xampp\htdocs\app_web\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+#9 C:\xampp\htdocs\app_web\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\app_web\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\app_web\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-10-13 19:38:02 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `materia` (`nombre`, `nombreCorto`, `clave`, `noUnidades`) VALUES (:nombre:, :nombreCorto:, :clave:, :noUnidades:)', [...], false)
+ 3 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\Materia.php(41): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Materia->insert()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\app_web\\public\\index.php')
+ERROR - 2023-10-13 19:50:46 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\app_web\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\app_web\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'estudiantec', 3306, '', 0)
+#1 C:\xampp\htdocs\app_web\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\app_web\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\app_web\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\app_web\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\app_web\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\app_web\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\app_web\app\Controllers\Materia.php(41): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\app_web\system\CodeIgniter.php(919): App\Controllers\Materia->insert()
+#9 C:\xampp\htdocs\app_web\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+#10 C:\xampp\htdocs\app_web\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\app_web\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\app_web\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\app_web\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\app_web\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\app_web\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\app_web\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#3 C:\xampp\htdocs\app_web\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\app_web\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\app_web\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\xampp\htdocs\app_web\app\Controllers\Materia.php(41): CodeIgniter\Model->insert(Array)
+#7 C:\xampp\htdocs\app_web\system\CodeIgniter.php(919): App\Controllers\Materia->insert()
+#8 C:\xampp\htdocs\app_web\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+#9 C:\xampp\htdocs\app_web\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\app_web\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\app_web\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-10-13 19:50:46 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `materia` (`nombre`, `nombreCorto`, `clave`, `noUnidades`) VALUES (:nombre:, :nombreCorto:, :clave:, :noUnidades:)', [...], false)
+ 3 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\Materia.php(41): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Materia->insert()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materia))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\app_web\\public\\index.php')

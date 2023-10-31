@@ -1,0 +1,18 @@
+CRITICAL - 2023-10-31 01:22:15 --> chdir(): No such file or directory (errno 2)
+in APPPATH\Controllers\Dump.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'chdir(): No such file or directory (errno 2)', 'C:\\xampp\\htdocs\\app_web\\app\\Controllers\\Dump.php', 14)
+ 2 APPPATH\Controllers\Dump.php(14): chdir('../../../../../../Program Files/MySQL/MySQL Workbench 8.0')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dump->exportar()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dump))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\app_web\\public\\index.php')
+CRITICAL - 2023-10-31 01:42:15 --> chdir(): No such file or directory (errno 2)
+in APPPATH\Controllers\Dump.php on line 15.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'chdir(): No such file or directory (errno 2)', 'C:\\xampp\\htdocs\\app_web\\app\\Controllers\\Dump.php', 15)
+ 2 APPPATH\Controllers\Dump.php(15): chdir('../../../../../../Program Files/MySQL/MySQL Workbench 8.0')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dump->exportar()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dump))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\app_web\\public\\index.php')
